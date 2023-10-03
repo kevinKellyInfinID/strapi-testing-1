@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section_raws",
+  "info": {
+    "singularName": "section-raw",
+    "pluralName": "section-raws",
+    "displayName": "Section Raw",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "section_raw_details": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section-raw-detail.section-raw-detail"
+    }
+  }
+}

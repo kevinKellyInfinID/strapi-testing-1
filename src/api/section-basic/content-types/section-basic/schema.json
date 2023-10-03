@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section_basics",
+  "info": {
+    "singularName": "section-basic",
+    "pluralName": "section-basics",
+    "displayName": "Section Basic",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "section_basic_details": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section-basic-detail.section-basic-detail"
+    },
+    "description": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
